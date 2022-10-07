@@ -3,6 +3,7 @@
   "version": "2.3.15",
   "description": "A markdown editor built on Vue",
   "main": "src/base-editor.js",
+  "type": "module",
   "keywords": [
     "javascript",
     "vue3",
