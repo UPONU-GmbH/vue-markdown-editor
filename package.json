@@ -2,7 +2,7 @@
   "name": "@kangc/v-md-editor",
   "version": "2.3.15",
   "description": "A markdown editor built on Vue",
-  "main": "lib/base-editor.js",
+  "main": "src/base-editor.js",
   "keywords": [
     "javascript",
     "vue3",
