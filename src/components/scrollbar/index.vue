@@ -1,12 +1,12 @@
-<script>
+<script lang="jsx">
 // Modified from https://github.com/ElemeFE/element/tree/dev/packages/scrollbar
 
 import { h } from 'vue';
-import { addResizeListener, removeResizeListener } from '@/utils/resize-event';
-import scrollbarWidth from '@/utils/scrollbar-width';
-import { arraytoObject } from '@/utils/util';
+import { addResizeListener, removeResizeListener } from '../../utils/resize-event';
+import scrollbarWidth from '../../utils/scrollbar-width';
+import { arraytoObject } from '../../utils/util';
 import Bar from './bar';
-import smoothScroll from '@/utils/smooth-scroll';
+import smoothScroll from '../../utils/smooth-scroll';
 
 export default {
   name: 'scrollbar',
