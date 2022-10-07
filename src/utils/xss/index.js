@@ -1,4 +1,4 @@
-import xss from 'xss';
+import { xss } from 'xss';
 import svgTagWhiteList from './svg';
 import kaTexWhiteList from './KaTex';
 import { attrWhiteList, prefixAttrWhiteList, tags } from './common';
