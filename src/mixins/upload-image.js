@@ -1,4 +1,4 @@
-import UploadFile from '../components/upload-file';
+import UploadFile from '../components/upload-file.vue';
 import imageToolbar from '../toolbar/image';
 import { filesFilter, getFilesFromClipboardData } from '../utils/file';
 import { image } from '../utils/constants/command';

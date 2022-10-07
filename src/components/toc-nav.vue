@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/var.css';
+@import '../styles/var.scss';
 
 .v-md-editor {
   &__toc-nav {
