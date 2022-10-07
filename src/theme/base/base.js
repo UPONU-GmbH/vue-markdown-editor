@@ -1,13 +1,13 @@
 import markdownItAttr from 'markdown-it-attrs';
-import markdownItLineNumber from '@/utils/markdown-it-line-number';
-import markdownItHeadingTag from '@/utils/markdown-it-heading-tag';
-import markdownItTableOfContent from '@/utils/markdown-it-table-of-content';
-import markdownItPreWrapper from '@/utils/markdown-it-pre-wrapper';
-import markdownItLink from '@/utils/markdown-it-link';
-import { LINE_MARKUP, HEADING_MARKUP, ANCHOR_MARKUP } from '@/utils/constants/markup';
+import markdownItLineNumber from '../../utils/markdown-it-line-number';
+import markdownItHeadingTag from '../../utils/markdown-it-heading-tag';
+import markdownItTableOfContent from '../../utils/markdown-it-table-of-content';
+import markdownItPreWrapper from '../../utils/markdown-it-pre-wrapper';
+import markdownItLink from '../../utils/markdown-it-link';
+import { LINE_MARKUP, HEADING_MARKUP, ANCHOR_MARKUP } from '../../utils/constants/markup';
 import slugify from '@vuepress/shared-utils/lib/slugify';
 
-import markdownIt from '@/utils/markdown-it';
+import markdownIt from '../../utils/markdown-it';
 
 export default function createBaseTheme({ toc, link, attrs } = {}) {
   const mdIt = markdownIt();

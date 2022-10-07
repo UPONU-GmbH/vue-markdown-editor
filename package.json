@@ -106,6 +106,7 @@
   },
   "homepage": "https://github.com/code-farmer-i/vue-markdown-editor#readme",
   "dependencies": {
+    "@vuepress/shared-utils": "^1.9.7",
     "copy-to-clipboard": "^3.3.2",
     "insert-text-at-cursor": "^0.3.0",
     "markdown-it": "^13.0.1",
