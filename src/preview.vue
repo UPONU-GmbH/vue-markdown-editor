@@ -17,7 +17,7 @@
 
 <script>
 import { reactive } from 'vue';
-import xss from './utils/xss/index';
+import xss from './utils/xss';
 import { VMdParser } from './utils/v-md-parser';
 
 // mixins

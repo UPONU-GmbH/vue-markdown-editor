@@ -14,7 +14,7 @@ function isPreviewHtml(filename) {
 function buildEntry(filename) {
   const content = `${tips}
 import Component from './${filename}.vue';${
-  !isPreviewHtml(filename) ? "\nimport xss from '@/utils/xss/index';" : ''
+  !isPreviewHtml(filename) ? "\nimport xss from '@/utils/xss';" : ''
 }
 // font css
 import '@/assets/css/font';
