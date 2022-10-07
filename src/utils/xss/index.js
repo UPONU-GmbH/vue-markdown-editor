@@ -1,4 +1,4 @@
-import xss from 'xss/lib/xss';
+import xss from 'xss/dist/xss.min.js';
 import svgTagWhiteList from './svg';
 import kaTexWhiteList from './KaTex';
 import { attrWhiteList, prefixAttrWhiteList, tags } from './common';
