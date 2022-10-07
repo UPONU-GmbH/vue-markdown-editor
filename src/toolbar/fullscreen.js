@@ -1,4 +1,4 @@
-import { fullscreen } from '@/utils/constants/command';
+import { fullscreen } from '../utils/constants/command';
 
 export default {
   name: fullscreen,

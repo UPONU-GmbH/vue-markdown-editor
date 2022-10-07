@@ -1,4 +1,4 @@
-import { code } from '@/utils/constants/command';
+import { code } from '../utils/constants/command';
 
 export default {
   name: code,

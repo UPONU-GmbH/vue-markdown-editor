@@ -1,4 +1,4 @@
-import { deepAssign } from '@/utils/deep-assign';
+import { deepAssign } from './deep-assign';
 
 export default class Lang {
   constructor(options = {}) {

@@ -1,7 +1,7 @@
-import UploadFile from '@/components/upload-file';
-import imageToolbar from '@/toolbar/image';
-import { filesFilter, getFilesFromClipboardData } from '@/utils/file';
-import { image } from '@/utils/constants/command';
+import UploadFile from '../components/upload-file';
+import imageToolbar from '../toolbar/image';
+import { filesFilter, getFilesFromClipboardData } from '../utils/file';
+import { image } from '../utils/constants/command';
 
 const defaultConfig = {
   accept: 'image/*',

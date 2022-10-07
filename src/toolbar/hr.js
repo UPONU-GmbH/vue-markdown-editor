@@ -1,4 +1,4 @@
-import { hr } from '@/utils/constants/command';
+import { hr } from '../utils/constants/command';
 
 export default {
   name: hr,

@@ -1,4 +1,4 @@
-import { clear } from '@/utils/constants/command';
+import { clear } from '../utils/constants/command';
 
 export default {
   name: clear,

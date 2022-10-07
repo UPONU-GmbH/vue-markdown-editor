@@ -1,4 +1,4 @@
-import { ul } from '@/utils/constants/command';
+import { ul } from '../utils/constants/command';
 
 export default {
   name: ul,

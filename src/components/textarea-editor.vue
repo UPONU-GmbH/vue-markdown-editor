@@ -31,9 +31,9 @@
 
 <script>
 import insertTextAtCursor from 'insert-text-at-cursor';
-import HotKeys from '@/utils/hotkeys';
+import HotKeys from '../utils/hotkeys';
 
-import { isKorean } from '@/utils/util';
+import { isKorean } from '../utils/util';
 
 export default {
   name: 'v-md-textarea-editor',

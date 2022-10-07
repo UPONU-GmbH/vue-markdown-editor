@@ -1,4 +1,4 @@
-import markdownItContainer from '@/utils/markdown-it-container';
+import markdownItContainer from './utils/markdown-it-container';
 
 export default function (vMdParser) {
   vMdParser.extendMarkdown((mdParser) => {

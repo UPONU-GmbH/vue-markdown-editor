@@ -1,4 +1,4 @@
-import { link } from '@/utils/constants/command';
+import { link } from '../utils/constants/command';
 
 export default {
   modifier: 'ctrl',

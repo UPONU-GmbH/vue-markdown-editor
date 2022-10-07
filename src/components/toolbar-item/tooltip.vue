@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/var';
+@import '../../styles/var';
 
 .v-md-editor {
   &__tooltip {

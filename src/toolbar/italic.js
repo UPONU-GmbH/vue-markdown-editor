@@ -1,4 +1,4 @@
-import { italic } from '@/utils/constants/command';
+import { italic } from '../utils/constants/command';
 
 export default {
   name: italic,

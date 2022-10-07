@@ -1,4 +1,4 @@
-import { syncScroll } from '@/utils/constants/command';
+import { syncScroll } from '../utils/constants/command';
 
 export default {
   name: syncScroll,

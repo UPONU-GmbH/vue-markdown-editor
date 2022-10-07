@@ -1,4 +1,4 @@
-import { ol } from '@/utils/constants/command';
+import { ol } from '../utils/constants/command';
 
 export default {
   modifier: 'ctrl',

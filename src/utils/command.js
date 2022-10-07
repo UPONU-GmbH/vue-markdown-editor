@@ -1,4 +1,4 @@
-import { importAll } from '@/utils/util';
+import { importAll } from './util';
 
 const defaultCommands = {};
 importAll(defaultCommands, require.context('@/command', false, /\.(js)$/));

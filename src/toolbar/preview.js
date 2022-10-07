@@ -1,4 +1,4 @@
-import EDITOR_MODE from '@/utils/constants/editor-mode';
+import EDITOR_MODE from '../utils/constants/editor-mode';
 
 export default {
   name: 'preview',

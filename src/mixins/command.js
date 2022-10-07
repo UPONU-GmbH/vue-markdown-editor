@@ -1,4 +1,4 @@
-import registerCommand from '@/utils/command';
+import registerCommand from '../utils/command';
 
 export default function (Component) {
   return {

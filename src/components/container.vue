@@ -77,9 +77,9 @@
 </template>
 
 <script>
-import Toolbar from '@/components/toolbar';
-import { addResizeListener, removeResizeListener } from '@/utils/resize-event';
-import EDITOR_MODE from '@/utils/constants/editor-mode';
+import Toolbar from '../components/toolbar.vue';
+import { addResizeListener, removeResizeListener } from '../utils/resize-event';
+import EDITOR_MODE from '../utils/constants/editor-mode';
 
 export default {
   name: 'v-md-container',

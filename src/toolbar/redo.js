@@ -1,4 +1,4 @@
-import { redo } from '@/utils/constants/command';
+import { redo } from '../utils/constants/command';
 
 export default {
   name: redo,

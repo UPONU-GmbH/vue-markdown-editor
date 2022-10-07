@@ -1,4 +1,4 @@
-import markdownItMermaid from '@/utils/markdown-it-mermaid';
+import markdownItMermaid from '../../utils/markdown-it-mermaid';
 
 export default function parser(vMdParser) {
   vMdParser.extendMarkdown((mdParser) => {

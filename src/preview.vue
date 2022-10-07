@@ -17,11 +17,11 @@
 
 <script>
 import { reactive } from 'vue';
-import xss from '@/utils/xss/index';
-import { VMdParser } from '@/utils/v-md-parser';
+import xss from './utils/xss/index';
+import { VMdParser } from './utils/v-md-parser';
 
 // mixins
-import PreviewMixin from '@/mixins/preview';
+import PreviewMixin from './mixins/preview';
 
 const component = {
   name: 'v-md-preview',

@@ -1,4 +1,4 @@
-import Lang from '@/utils/lang';
+import Lang from './lang';
 
 export class VMdParser {
   constructor() {

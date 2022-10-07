@@ -1,4 +1,4 @@
-import registerToolbar from '@/utils/toolbar';
+import registerToolbar from '../utils/toolbar';
 
 export default function (Component) {
   return {

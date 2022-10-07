@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ToolbarItem from '@/components/toolbar-item/index';
+import ToolbarItem from '../components/toolbar-item/index.vue';
 
 export default {
   name: 'editor-toolbar',

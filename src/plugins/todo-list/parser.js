@@ -1,4 +1,4 @@
-import markdownItTodoList from '@/utils/markdown-it-todo-list';
+import markdownItTodoList from '../../utils/markdown-it-todo-list';
 
 export default function (vMdParser, options) {
   vMdParser.extendMarkdown((mdParser) => {

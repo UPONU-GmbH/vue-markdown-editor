@@ -1,5 +1,5 @@
-import { image } from '@/utils/constants/command';
-import { filesFilter } from '@/utils/file';
+import { image } from '../utils/constants/command';
+import { filesFilter } from '../utils/file';
 
 export default {
   name: image,

@@ -1,4 +1,4 @@
-import { h2 } from '@/utils/constants/command';
+import { h2 } from '../utils/constants/command';
 
 export default {
   modifier: 'ctrl',

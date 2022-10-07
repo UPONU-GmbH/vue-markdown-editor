@@ -63,10 +63,10 @@
 </template>
 
 <script>
-import TextareaEditor from '@/components/textarea-editor';
+import TextareaEditor from './components/textarea-editor.vue';
 import createEditor from './create-editor';
 
-import { inBrowser } from '@/utils/util';
+import { inBrowser } from './utils/util';
 
 const component = {
   components: {

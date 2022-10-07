@@ -1,4 +1,4 @@
-import { quote } from '@/utils/constants/command';
+import { quote } from '../utils/constants/command';
 
 export default {
   modifier: 'ctrl',

@@ -1,6 +1,6 @@
-import { getScrollTop } from '@/utils/scroll-top';
-import smoothScroll from '@/utils/smooth-scroll';
-import { LINE_MARKUP, HEADING_MARKUP, ANCHOR_MARKUP } from '@/utils/constants/markup';
+import { getScrollTop } from '../utils/scroll-top';
+import smoothScroll from '../utils/smooth-scroll';
+import { LINE_MARKUP, HEADING_MARKUP, ANCHOR_MARKUP } from '../utils/constants/markup';
 
 export default {
   props: {

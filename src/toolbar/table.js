@@ -1,4 +1,4 @@
-import { table } from '@/utils/constants/command';
+import { table } from '../utils/constants/command';
 
 export default {
   name: table,

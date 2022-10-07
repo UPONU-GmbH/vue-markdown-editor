@@ -1,4 +1,4 @@
-import { undo } from '@/utils/constants/command';
+import { undo } from '../utils/constants/command';
 
 export default {
   name: undo,

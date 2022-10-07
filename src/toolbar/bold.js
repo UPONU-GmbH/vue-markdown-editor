@@ -1,4 +1,4 @@
-import { bold } from '@/utils/constants/command';
+import { bold } from '../utils/constants/command';
 
 export default {
   name: bold,

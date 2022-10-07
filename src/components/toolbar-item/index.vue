@@ -44,9 +44,9 @@
 <script>
 import Tooltip from './tooltip';
 import Menu from './menu';
-import Clickoutside from '@/utils/clickoutside';
-import { isObject } from '@/utils/util';
-import MENU_MODE from '@/utils/constants/menu-mode';
+import Clickoutside from '../../utils/clickoutside';
+import { isObject } from '../../utils/util';
+import MENU_MODE from '../../utils/constants/menu-mode';
 
 export default {
   name: 'toolbar-item',

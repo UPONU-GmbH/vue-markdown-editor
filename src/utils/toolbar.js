@@ -1,4 +1,4 @@
-import { importAll } from '@/utils/util';
+import { importAll } from './util';
 
 const defaultToolbars = {};
 importAll(defaultToolbars, require.context('@/toolbar', false, /\.(js)$/));

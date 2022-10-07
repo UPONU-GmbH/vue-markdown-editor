@@ -1,4 +1,4 @@
-import { strikethrough } from '@/utils/constants/command';
+import { strikethrough } from '../utils/constants/command';
 
 export default {
   name: strikethrough,

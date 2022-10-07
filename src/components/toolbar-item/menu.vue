@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import VMdRender from '@/components/render';
-import MENU_MODE from '@/utils/constants/menu-mode';
+import VMdRender from '../../components/render';
+import MENU_MODE from '../../utils/constants/menu-mode';
 
 export default {
   name: 'v-md-menu',
