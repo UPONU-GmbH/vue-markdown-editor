@@ -168,7 +168,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/var';
+@import '../../styles/var.scss';
 
 .scrollbar {
   height: 100%;

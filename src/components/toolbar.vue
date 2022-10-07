@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/var';
+@import '../styles/var.scss';
 
 .v-md-editor {
   &__toolbar {

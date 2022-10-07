@@ -130,8 +130,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/var';
-@import '@/styles/mixins';
+@import '../../styles/var.scss';
+@import '../../styles/mixins.scss';
 
 .v-md-editor {
   &__menu {
