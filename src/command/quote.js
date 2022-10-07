@@ -1,4 +1,4 @@
-export { quote as name } from '@/utils/constants/command.js';
+export { quote as name } from '../utils/constants/command.js';
 
 export default function (editor) {
   editor.insert((selected) => {
