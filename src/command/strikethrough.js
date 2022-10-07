@@ -1,6 +1,6 @@
-import { generatorText } from '@/utils/util';
+import { generatorText } from '../utils/util';
 
-export { strikethrough as name } from '@/utils/constants/command.js';
+export { strikethrough as name } from '../utils/constants/command.js';
 
 export default function (editor) {
   editor.insert((selected) => {

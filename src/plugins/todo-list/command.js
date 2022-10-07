@@ -1,4 +1,4 @@
-import { generatorText } from './../../utils/util';
+import { generatorText } from '../../utils/util';
 
 export default function commandHandler(editor, { type = 'todo' } = {}) {
   editor.insert((selected) => {

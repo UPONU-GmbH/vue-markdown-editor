@@ -1,6 +1,6 @@
-import { generatorText } from '@/utils/util';
+import { generatorText } from '../utils/util';
 
-export { h3 as name } from '@/utils/constants/command.js';
+export { h3 as name } from '../utils/constants/command.js';
 
 export default function (editor) {
   editor.insert((selected) => {

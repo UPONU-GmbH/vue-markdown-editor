@@ -1,4 +1,4 @@
-import { importAll } from '@/utils/util';
+import { importAll } from '../utils/util';
 
 const defaultHotkeys = {};
 importAll(defaultHotkeys, require.context('@/hotkeys', false, /\.(js)$/));
