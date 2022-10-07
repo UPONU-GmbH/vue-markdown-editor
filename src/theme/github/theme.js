@@ -1,4 +1,4 @@
-import createHljsTheme from './theme/base/highlight';
+import createHljsTheme from '../base/highlight';
 
 export default function createGithubTheme(config) {
   const hljsTheme = createHljsTheme({

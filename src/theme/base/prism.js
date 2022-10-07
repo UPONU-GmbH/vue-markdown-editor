@@ -1,5 +1,5 @@
 import createBaseTheme from './base';
-import { createHighlightRender } from '@/utils/markdown-it';
+import { createHighlightRender } from '../../utils/markdown-it';
 
 export default function createPrismTheme({
   Prism,
