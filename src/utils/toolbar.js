@@ -1,7 +1,4 @@
-import { importAll } from './util';
-
-const defaultToolbars = {};
-importAll(defaultToolbars, require.context('@/toolbar', false, /\.(js)$/));
+const defaultToolbars = import.meta.glob('../toolbar/*.js', { eager: true })
 
 export default function registerToolbar(target, name, config) {
   if (name) {

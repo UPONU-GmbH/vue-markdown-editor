@@ -20,12 +20,6 @@ export function arraytoObject(arr) {
   return res;
 }
 
-export function importAll(map, r) {
-  r.keys().forEach((filePath) => {
-    map[filePath] = r(filePath);
-  });
-}
-
 export const inBrowser = typeof window !== 'undefined';
 
 export function isKorean(text) {

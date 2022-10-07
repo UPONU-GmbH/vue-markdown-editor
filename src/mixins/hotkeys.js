@@ -1,7 +1,4 @@
-import { importAll } from '../utils/util';
-
-const defaultHotkeys = {};
-importAll(defaultHotkeys, require.context('@/hotkeys', false, /\.(js)$/));
+const defaultHotkeys = import.meta.glob('../hotkeys/*.js', { eager: true })
 
 export default function (Component) {
   return {

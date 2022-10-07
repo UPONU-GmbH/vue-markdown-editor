@@ -1,7 +1,4 @@
-import { importAll } from './util';
-
-const defaultCommands = {};
-importAll(defaultCommands, require.context('@/command', false, /\.(js)$/));
+const defaultCommands = import.meta.glob('../command/*.js', { eager: true })
 
 export default function registerCommand(target, commandName, callback) {
   if (commandName) {
