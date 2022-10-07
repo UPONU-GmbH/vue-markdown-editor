@@ -5,7 +5,7 @@ import { h } from 'vue';
 import { addResizeListener, removeResizeListener } from '../../utils/resize-event';
 import scrollbarWidth from '../../utils/scrollbar-width';
 import { arraytoObject } from '../../utils/util';
-import Bar from './bar';
+import Bar from './bar.jsx';
 import smoothScroll from '../../utils/smooth-scroll';
 
 export default {
