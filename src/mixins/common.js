@@ -1,10 +1,10 @@
 // base css
 import '../styles/index.scss';
 
-import Preview from '../preview';
-import Container from '../components/container';
-import Scrollbar from '../components/scrollbar/index';
-import TocNav from '../components/toc-nav';
+import Preview from '../preview.vue';
+import Container from '../components/container.vue';
+import Scrollbar from '../components/scrollbar/index.vue';
+import TocNav from '../components/toc-nav.vue';
 
 import EDITOR_MODE from '../utils/constants/editor-mode';
 
