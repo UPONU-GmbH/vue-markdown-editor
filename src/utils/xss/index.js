@@ -1,7 +1,8 @@
-import { xss } from 'xss';
 import svgTagWhiteList from './svg';
 import kaTexWhiteList from './KaTex';
 import { attrWhiteList, prefixAttrWhiteList, tags } from './common';
+
+const xss = require('xss')
 
 const tagWhiteList = { ...tags, ...kaTexWhiteList, ...svgTagWhiteList };
 
