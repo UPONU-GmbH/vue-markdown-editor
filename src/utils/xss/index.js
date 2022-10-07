@@ -1,14 +1,13 @@
+import { getDefaultWhiteList, escapeAttrValue, FilterXSS } from 'xss';
 import svgTagWhiteList from './svg';
 import kaTexWhiteList from './KaTex';
 import { attrWhiteList, prefixAttrWhiteList, tags } from './common';
-
-const xss = require('xss')
 
 const tagWhiteList = { ...tags, ...kaTexWhiteList, ...svgTagWhiteList };
 
 const options = {
   whiteList: {
-    ...xss.getDefaultWhiteList(),
+    ...getDefaultWhiteList(),
     ...tagWhiteList,
   },
   onIgnoreTagAttr(tag, name, value) {
@@ -18,12 +17,12 @@ const options = {
       attrWhiteList.find((attr) => attr === name) ||
       prefixAttrWhiteList.find((prefix) => name.startsWith(prefix))
     ) {
-      return `${name}="${xss.escapeAttrValue(value)}"`;
+      return `${name}="${escapeAttrValue(value)}"`;
     }
   },
 };
 
-const xssFilterInstance = new xss.FilterXSS(options);
+const xssFilterInstance = new FilterXSS(options);
 
 xssFilterInstance.extend = function (extendOptions) {
   const instanceOptions = xssFilterInstance.options;
