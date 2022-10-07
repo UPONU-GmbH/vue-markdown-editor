@@ -42,8 +42,8 @@
 </template>
 
 <script>
-import Tooltip from './tooltip';
-import Menu from './menu';
+import Tooltip from './tooltip.vue';
+import Menu from './menu.vue';
 import Clickoutside from '../../utils/clickoutside';
 import { isObject } from '../../utils/util';
 import MENU_MODE from '../../utils/constants/menu-mode';
