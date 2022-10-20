@@ -17,7 +17,6 @@
 
 <script>
 import { reactive } from 'vue';
-import xss from './utils/xss';
 import { VMdParser } from './utils/v-md-parser';
 
 // mixins
@@ -65,7 +64,7 @@ const component = {
   methods: {
     handleTextChange() {
       const next = (text) => {
-        this.html = xss.process(this.$options.vMdParser.parse(text));
+        this.html = this.$options.vMdParser.parse(text);
 
         this.$emit('change', text, this.html);
       };
