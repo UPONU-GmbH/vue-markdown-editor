@@ -37,7 +37,7 @@
           @drop="handleDrop"
           @paste="handlePaste"
           @blur="handleBlur"
-          ref="editorEgine"
+          ref="editorEngine"
         />
       </scrollbar>
     </template>
@@ -54,18 +54,13 @@
         />
       </scrollbar>
     </template>
-    <v-md-upload-file
-      v-if="hasUploadImage"
-      :upload-config="uploadConfig"
-      ref="uploadFile"
-    />
   </v-md-container>
 </template>
 
 <script>
 import TextareaEditor from './components/textarea-editor.vue';
 import createEditor from './create-editor';
-
+import './assets/css/font.css';
 import { inBrowser } from './utils/util';
 
 const component = {
@@ -97,7 +92,14 @@ const component = {
       textEditorMinHeight: '',
     };
   },
+  emits: ['paste', 'drop'],
   methods: {
+    handlePaste(e) {
+      this.$emit('paste', e);
+    },
+    handleDrop(e) {
+      this.$emit('drop', e);
+    },
     handleEditorWrapperClick() {
       this.setFocusEnd();
     },
@@ -105,29 +107,29 @@ const component = {
     editorFocusEnd() {
       this.focus();
 
-      this.$refs.editorEgine.setRange({
+      this.$refs.editorEngine.setRange({
         start: this.text.length,
         end: this.text.length,
       });
     },
     // Must implement
     delLineLeft() {
-      const { editorEgine } = this.$refs;
-      const { start } = editorEgine.getRange();
+      const { editorEngine } = this.$refs;
+      const { start } = editorEngine.getRange();
 
       const leftText = this.getCursorLineLeftText();
-      editorEgine.setRange({ start: start - leftText.length - 1, end: start });
+      editorEngine.setRange({ start: start - leftText.length - 1, end: start });
       this.replaceSelectionText('\n');
     },
     // Must implement
     getCursorLineLeftText() {
-      const { start, end } = this.$refs.editorEgine.getRange();
+      const { start, end } = this.$refs.editorEngine.getRange();
 
       return start === end ? this.text.slice(0, start).split('\n').pop() : null;
     },
     // Must implement
     editorRegisterHotkeys(...arg) {
-      this.$refs.editorEgine.registerHotkeys(...arg);
+      this.$refs.editorEngine.registerHotkeys(...arg);
     },
     // Must implement
     editorScrollToTop(scrollTop) {
@@ -139,19 +141,19 @@ const component = {
     },
     // Must implement
     heightAtLine(...arg) {
-      return this.$refs.editorEgine.heightAtLine(...arg);
+      return this.$refs.editorEngine.heightAtLine(...arg);
     },
     // Must implement
     focus() {
-      this.$refs.editorEgine.focus();
+      this.$refs.editorEngine.focus();
     },
     // Must implement
     undo() {
-      this.$refs.editorEgine.undo();
+      this.$refs.editorEngine.undo();
     },
     // Must implement
     redo() {
-      this.$refs.editorEgine.redo();
+      this.$refs.editorEngine.redo();
     },
     // Must implement
     clear() {
@@ -161,19 +163,19 @@ const component = {
     },
     // Must implement
     replaceSelectionText(text) {
-      this.$refs.editorEgine.insertText(text);
+      this.$refs.editorEngine.insertText(text);
     },
     // Must implement
     getCurrentSelectedStr() {
-      const { start, end } = this.$refs.editorEgine.getRange();
+      const { start, end } = this.$refs.editorEngine.getRange();
 
       return end > start ? this.text.slice(start, end) : null;
     },
     // Must implement
     changeSelctionTo(insertText, selectedText) {
-      const { editorEgine } = this.$refs;
+      const { editorEngine } = this.$refs;
       const selectedIndexOfStr = insertText.indexOf(selectedText);
-      const cursorEndIndex = editorEgine.getRange().end;
+      const cursorEndIndex = editorEngine.getRange().end;
 
       if (selectedIndexOfStr === -1) return;
 
@@ -182,7 +184,7 @@ const component = {
       const rangeStartIndex = insertTextIndex + selectedIndexOfStr;
       const rangeEndIndex = rangeStartIndex + selectedText.length;
 
-      this.$refs.editorEgine.setRange({
+      this.$refs.editorEngine.setRange({
         start: rangeStartIndex,
         end: rangeEndIndex,
       });

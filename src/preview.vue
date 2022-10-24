@@ -18,6 +18,7 @@
 <script>
 import { reactive } from 'vue';
 import { VMdParser } from './utils/v-md-parser';
+import './assets/css/font.css';
 
 // mixins
 import PreviewMixin from './mixins/preview';

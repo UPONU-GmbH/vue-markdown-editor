@@ -9,7 +9,6 @@ import { toolbarWrapper } from './utils/toolbar';
 import commonMixin from './mixins/common';
 import vModelMixin from './mixins/v-model';
 import fullscreenMixin from './mixins/fullscreen';
-import uploadImageMixin from './mixins/upload-image';
 import syncScrollMixin from './mixins/sync-scroll';
 import toolbarMixin from './mixins/toolbar';
 import commandMixin from './mixins/command';
@@ -50,7 +49,6 @@ export default function createEditor(component) {
     commandMixin(component),
     hotkeysMixin(component),
     fullscreenMixin,
-    uploadImageMixin,
     syncScrollMixin,
     tocMixin,
     scrollMixin,

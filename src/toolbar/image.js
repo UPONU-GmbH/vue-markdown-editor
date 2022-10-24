@@ -16,19 +16,6 @@ export default {
           editor.execCommand(image);
         }
       },
-    },
-    {
-      name: 'upload-image',
-      text: (editor) => editor.langConfig.uploadImage.toolbar,
-      action(editor) {
-        editor.uploadConfig = editor.uploadImgConfig;
-        editor.$nextTick(async () => {
-          const event = await editor.$refs.uploadFile.upload();
-          const files = filesFilter(event.target.files, editor.uploadImgConfig);
-
-          editor.emitUploadImage(event, files);
-        });
-      },
-    },
+    }
   ],
 };
