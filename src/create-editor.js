@@ -18,7 +18,7 @@ import hotkeysMixin from './mixins/hotkeys';
 import listMixin from './mixins/list';
 import langMixin from './mixins/lang';
 
-import Preview from './preview';
+import Preview from './preview.vue';
 
 const lang = new Lang({
   afterUse(lang) {
